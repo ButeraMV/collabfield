@@ -14,6 +14,7 @@ gem 'apparition'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'bootstrap_form'
 gem 'devise'
+gem 'faker'
 gem 'jquery-rails'
 gem 'sass-rails', '>= 3.2'
 # Use Uglifier as compressor for JavaScript assets
