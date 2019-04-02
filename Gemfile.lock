@@ -44,11 +44,16 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
+    apparition (0.1.0)
+      backports
+      capybara (~> 3.12, < 4)
+      websocket-driver (>= 0.6.5)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
     autoprefixer-rails (9.5.0)
       execjs
+    backports (3.12.0)
     bcrypt (3.1.12)
     bindex (0.6.0)
     bootsnap (1.4.2)
@@ -245,6 +250,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  apparition
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.6)
   bootstrap_form
