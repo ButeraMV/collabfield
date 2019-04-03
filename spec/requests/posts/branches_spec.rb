@@ -29,5 +29,4 @@ RSpec.describe "branches", :type => :request do
 
     it_behaves_like 'render_templates'
   end
-
 end
