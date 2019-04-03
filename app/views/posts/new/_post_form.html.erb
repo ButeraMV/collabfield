@@ -1,11 +1,10 @@
 <%= bootstrap_form_for(@post) do |f| %>
   <%= f.text_field  :title,
                     maxlength: 100,
+                    minlength: 5,
                     placeholder: 'Title',
                     class: 'form-control',
-                    required: true,
-                    minlength: 5,
-                    maxlength: 100 %>
+                    required: true %>
   <%= f.hidden_field :branch, :value => @branch %>
   <%= f.text_area :content,
                   rows: 6,

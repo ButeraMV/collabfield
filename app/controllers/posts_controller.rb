@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   before_action :redirect_if_not_signed_in, only: [:new]
-  
+
   def show
     @post = Post.find(params[:id])
   end
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
 
   def new
     @branch = params[:branch]
-    @categories = Category.where(branch: branch)
+    @categories = Category.where(branch: @branch)
     @post = Post.new
   end
 
